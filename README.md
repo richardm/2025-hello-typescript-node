@@ -1,3 +1,5 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/richardm/2025-hello-typescript-node/node.js.yml)
+
 # Scaffolding for a minimal TypeScript Node.js Express project
 
 **Why?**
