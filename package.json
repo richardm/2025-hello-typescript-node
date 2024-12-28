@@ -3,19 +3,27 @@
   "version": "1.0.0",
   "description": "Basic scaffolding for a TypeScript Node.js project",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
-  "main": "index.js",
+  "main": "./index.ts",
+  "exports": "./index.ts",
   "scripts": {
-    "start": "tsx ./app.ts",
-    "dev": "tsx watch ./app.ts",
+    "start": "node ./dist/index.js",
+    "build:ci": "npm run type-check && tsx ./index.ts --bundle --outfile=./dist/index.js",
+    "dev": "tsx watch ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit"
   },
-  "keywords": [],
+  "keywords": [
+    "node.js",
+    "express",
+    "typescript",
+    "esbuild"
+  ],
   "author": "Richard Morgan",
-  "license": "ISC",
+  "license": "0BSD",
   "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
     "prettier": "^3.4.2",
