@@ -9,10 +9,10 @@
     // Allow JS files to be imported from TS and vice versa
     "allowJs": true,
 
-    // Use correct ESM import behavior
+    // Use correct ESM import behavior - recommended by esbuild: https://esbuild.github.io/content-types/#es-module-interop
     "esModuleInterop": true,
 
-    // Disallow features that require cross-file awareness
+    // esbulid wants this enabled: https://esbuild.github.io/content-types/#isolated-modules
     "isolatedModules": true,
 
     "module": "commonjs",
