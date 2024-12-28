@@ -1,9 +1,8 @@
 # A minimal TypeScript Node.js Express project
 
-## Prerequisites:
+## Prerequisites (install globally using `nvm`):
 
 - Node.js 22+
-- TypeScript 5+
 
 ## Goals:
 
@@ -19,6 +18,7 @@
 
 ## Notes:
 
+- **Scaffolding testing is out of scope for now.** Maybe in a future update.
 - Express 5 requires Node.js 18 or higher, but since this is a reference repo for 2025 and onward, I'm using Node.js 22.
 - `tsx` does not perform type checking. VS Code can do that for you locally, and your CI/CD pipeline can do that for you during builds.
 - Note that `tsx` uses `esbuild` under the hood
