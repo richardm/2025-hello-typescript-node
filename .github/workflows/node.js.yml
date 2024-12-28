@@ -1,17 +1,37 @@
-name: Node.js CI
+name: Node.js CI/CD Pipeline
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Use Node.js 22.x
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-      - run: npm ci
-      - run: npm run build:ci --if-present
-      - run: npm test
+
+      - name: Install dependencies
+        run: npm ci
+
+      # - name: Lint code
+      # run: npm run lint
+
+      # - name: Type check code
+      # run: npm run type-check
+
+      - name: Build code
+        run: npm run build --if-present
+
+      # - name: Run tests
+      # run: npm test

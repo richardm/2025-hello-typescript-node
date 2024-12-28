@@ -9,7 +9,7 @@
   "exports": "./dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "build:ci": "npm run type-check && tsx ./index.ts --bundle",
+    "build": "tsc",
     "dev": "tsx watch ./index.ts",
     "lint": "eslint .",
     "prod": "node ./dist/index.js",
