@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  quality-checks:
     runs-on: ubuntu-latest
 
     steps:
