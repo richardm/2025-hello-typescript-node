@@ -1,4 +1,5 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/richardm/2025-hello-typescript-node/node.js.yml)
+![License](https://img.shields.io/github/license/richardm/2025-hello-typescript-node)
 
 # Scaffolding for a minimal TypeScript Node.js Express project
 

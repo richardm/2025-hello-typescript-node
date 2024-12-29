@@ -14,7 +14,9 @@
     "lint": "eslint .",
     "prod": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [
     "node.js",
