@@ -28,7 +28,7 @@
   "license": "0BSD",
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
-    "@types/express": "^5.0.0",
+    "@types/express": "^5.0.1",
     "@types/node": "^22.13.0",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",
