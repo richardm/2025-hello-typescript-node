@@ -11,6 +11,8 @@
     "start": "node ./dist/index.js",
     "build": "tsc",
     "dev": "tsx watch ./index.ts",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "lint": "eslint .",
     "prod": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
