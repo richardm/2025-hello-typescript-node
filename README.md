@@ -39,7 +39,7 @@ I recommend using the latest LTS version of Node.js in production; however this 
 - [x] Support TypeScript ESM
 - [x] Use eslint for consistency
 - [x] Use Prettier for formatting
-- [ ] VSCode devcontainer
+- [x] Provide a VSCode `.devcontainer`
 - [ ] Jest for unit tests
 - [ ] (Supertest?) for API tests
 - [ ] Pino for logging
