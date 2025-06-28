@@ -1,5 +1,7 @@
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/richardm/2025-hello-typescript-node/build.yml)
-![Security Audit Status](https://img.shields.io/github/actions/workflow/status/richardm/2025-hello-typescript-node/audit-dependencies.yml?label=security)
+[![Build](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml)
+[![Security Audit](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml)
+[![Quality](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml)
+[![Dependabot](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates)
 
 # Scaffolding for a minimal TypeScript Node.js Express project
 
