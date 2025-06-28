@@ -1,9 +1,10 @@
 {
   "name": "2025-hello-typescript-node",
+  "type": "module",
   "version": "1.0.0",
   "description": "Basic scaffolding for a TypeScript Node.js project",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=20.0.0"
   },
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
