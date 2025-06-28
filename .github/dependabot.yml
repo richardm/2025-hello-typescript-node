@@ -13,25 +13,25 @@ updates:
     # (Because I trust the project maintainers more than I trust out of date dependencies)
     auto-merge: true
     allow:
-      - dependency-name: "@tsconfig/node22"
-      - dependency-name: "@types/express"
-      - dependency-name: "@types/node"
-      - dependency-name: "prettier"
-      - dependency-name: "tsx"
-      - dependency-name: "typescript"
-      - dependency-name: "express"
+      - dependency-name: '@tsconfig/node22'
+      - dependency-name: '@types/express'
+      - dependency-name: '@types/node'
+      - dependency-name: 'prettier'
+      - dependency-name: 'tsx'
+      - dependency-name: 'typescript'
+      - dependency-name: 'express'
   # Catch all: Open PRs for any dependencies I haven't allowed auto-merge on above
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     # Ignore the packages allowed above above
     ignore:
-      - dependency-name: "@tsconfig/node22"
-      - dependency-name: "@types/express"
-      - dependency-name: "@types/node"
-      - dependency-name: "prettier"
-      - dependency-name: "tsx"
-      - dependency-name: "typescript"
-      - dependency-name: "express"
+      - dependency-name: '@tsconfig/node22'
+      - dependency-name: '@types/express'
+      - dependency-name: '@types/node'
+      - dependency-name: 'prettier'
+      - dependency-name: 'tsx'
+      - dependency-name: 'typescript'
+      - dependency-name: 'express'
     auto-merge: false
