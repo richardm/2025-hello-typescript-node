@@ -1,6 +1,6 @@
-[![Build](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml)
-[![Security Audit](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml)
-[![Quality](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml)
+[![Build](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/build.yml)
+[![Security Audit](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml/badge.svg?branch=main)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/audit-dependencies.yml)
+[![Quality checks](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml/badge.svg?branch=main)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml)
 [![Dependabot](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates)
 
 # Scaffolding for a minimal TypeScript ESM / Node.js 20+ / Express 5 / Eslint 9 / Prettier project
