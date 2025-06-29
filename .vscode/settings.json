@@ -1,0 +1,47 @@
+{
+  // Auto fix eslint errors on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // Use the prettier for formatting and eslint for linting
+  "editor.formatOnSave": true,
+  // Unintuitively, VS Code overrides this for json / jsonc, causing unexpected behavior
+  // You must explicitly specify Prettier as the formatter for those languages below
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+
+  // ESLint settings
+  "eslint.debug": true,
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.validate": ["javascript", "json", "jsonc", "typescript"],
+
+  // JavaScript Settings
+  "javascript.suggestionActions.enabled": true,
+  "javascript.validate.enable": true,
+
+  // TypesScript Settings
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.validate.enable": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.disableAutomaticTypeAcquisition": false,
+  "typescript.suggestionActions.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  // Ensure that VS Code uses Prettier rather than its built in formatter for json files
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.associations": {
+    // Stop VSCode's JSON validation from complaining about settings-antfu.json
+    "**/.vscode/*.json": "jsonc"
+  }
+}
