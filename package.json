@@ -30,7 +30,7 @@
   "author": "Richard Morgan",
   "license": "0BSD",
   "devDependencies": {
-    "@tsconfig/node22": "^22.0.0",
+    "@tsconfig/node22": "^22.0.2",
     "@types/express": "^5.0.1",
     "@types/node": "^24.0.10",
     "prettier": "^3.6.2",
