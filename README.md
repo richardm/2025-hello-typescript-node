@@ -39,7 +39,7 @@ Since 2025, we have seen a surge in npm supply chain vulnerabilities, especially
 - [x] Uses pnpm with hardened defaults (see `.npmrc`), including disabling install scripts, requiring dependencies (and transitive dependencies) to be 3+ days old.
 - [ ] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
 - [x] Pinned hashes enforced by GitHub (Security -> Actions -> General -> enable "Require full-length SHA")
-- [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo (see: #84)
+- [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo. See: #84
 
 ## Project Goals
 
