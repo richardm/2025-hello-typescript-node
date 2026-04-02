@@ -40,7 +40,7 @@ I recommend using the latest LTS version of Node.js in production; however this 
 - [x] Use eslint for consistency
 - [x] Use Prettier for formatting
 - [x] Provide a VSCode `.devcontainer`
-- [ ] Jest for unit tests
+- [ ] Vitest for unit tests
 - [ ] (Supertest?) for API tests
 - [ ] Pino for logging
 - [ ] Adopt Conventional Commits and automatically generate the changelog
