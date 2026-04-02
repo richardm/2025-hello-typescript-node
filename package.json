@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Basic scaffolding for a TypeScript Node.js project",
   "engines": {
-    "node": ">=20.0.0",
+    "node": ">=22",
     "pnpm": ">=10"
   },
   "main": "./dist/index.js",
