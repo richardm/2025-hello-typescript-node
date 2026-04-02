@@ -16,9 +16,9 @@
     // esbulid wants this enabled: https://esbuild.github.io/content-types/#isolated-modules
     "isolatedModules": true,
 
-    "module": "nodenext",
+    "module": "es2015",
     "target": "es6",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "bundler",
     "sourceMap": true,
     "outDir": "dist"
   },
