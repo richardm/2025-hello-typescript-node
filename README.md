@@ -9,11 +9,11 @@
 
 1. Ensure Node.js 22+ is installed in your workspace (I recommend using `nvm`)
 2. From GitHub repo, click "Use this template" to create a new project from this template.
-3. Add your application code to the src directory
+3. Add your application code to the `src` directory
 
 ## Why us this template?
 
-I created this in January 2025 because I was tired of scaffolding new projects from scratch and wanted a modern baseline I could use for new projects.
+I created this in January 2025 because I was tired of scaffolding new projects from scratch and wanteds a modern baseline I could use for new projects.
 
 This is an **opinionated** template using my current default tech stack: TypeScript 6, Node.js 22 / 24, Express 5, Eslint 9 (flat config), Prettier, Vitest, GitHub Actions.
 
@@ -22,8 +22,8 @@ This is an **opinionated** template using my current default tech stack: TypeScr
 - [x] Remove support for Node.js 18 and below due to End-of-Life (completed June 2025)
 - [x] Remove support for Node.js 23 due to End-of-Life (completed June 2025)
 - [x] Add support for Node.js 24 (Current) (completed June 2025)
-- [] Remove support for Node.js 20 due to end of maintenance phase. (in progress April 2026) (#83)
-- [] Add support for Node.js 26 (coming soon)
+- [ ] Remove support for Node.js 20 due to end of maintenance phase. (in progress April 2026) (see: #83)
+- [ ] Add support for Node.js 26 (coming soon)
 
 ## Supported Node.js versions
 
@@ -37,9 +37,9 @@ I recommend using the latest LTS version of Node.js in production; however this 
 Since 2025, we have seen a surge in npm supply chain vulnerabilities, especially via targeting insecure GitHub Actions and stealing credentials for maintainers of open source packages. I strongly recommend using fully isolated cloud VMs for development to avoid accidentally installing rogue npm dependencies on your main computer. However, this repo provides hardened security defaults to reduce the risk if you do develop locally.
 
 - [x] Uses pnpm with hardened defaults (see `.npmrc`), including disabling install scripts, requiring dependencies (and transitive dependencies) to be 3+ days old.
-- [] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
+- [ ] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
 - [x] Pinned hashes enforced by GitHub (Security -> Actions -> General -> enable "Require full-length SHA")
-- [] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo (#84)
+- [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo (see: #84)
 
 ## Project Goals
 
