@@ -3,7 +3,7 @@
 [![Quality checks](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml/badge.svg?branch=main)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/quality-checks.yml)
 [![Dependabot](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/richardm/2025-hello-typescript-node/actions/workflows/dependabot/dependabot-updates)
 
-# Scaffolding for a minimal TypeScript ESM / Node.js 22+ / Express 5 / Eslint 9 / Prettier project
+# TypeScript 6 ESM / Node.js 22+ / Express 5 / Eslint 9 / Prettier template
 
 ## How to use
 
@@ -11,9 +11,9 @@
 2. From GitHub repo, click "Use this template" to create a new project from this template.
 3. Add your application code to the `src` directory
 
-## Why us this template?
+## Why use this template?
 
-I created this in January 2025 because I was tired of scaffolding new projects from scratch and wanteds a modern baseline I could use for new projects.
+I created this in January 2025 because I was tired of scaffolding new projects from scratch and wanted a modern baseline I could use for new projects.
 
 This is an **opinionated** template using my current default tech stack: TypeScript 6, Node.js 22 / 24, Express 5, Eslint 9 (flat config), Prettier, Vitest, GitHub Actions.
 
@@ -34,10 +34,14 @@ I recommend using the latest LTS version of Node.js in production; however this 
 
 ## Security
 
-Since 2025, we have seen a surge in npm supply chain vulnerabilities, especially via targeting insecure GitHub Actions and stealing credentials for maintainers of open source packages. I strongly recommend using fully isolated cloud VMs for development to avoid accidentally installing rogue npm dependencies on your main computer. However, this repo provides hardened security defaults to reduce the risk if you do develop locally.
+Since 2025, there has been a surge in npm supply chain vulnerabilities. GitHub Actions workflows are commonly compromised to steal maintainer credentials and push malicious updates, even to otherwise trustworthy dependencies. As a result, I prefer a zero trust posture towards all dependencies.
+
+If possible, I strongly recommend using fully isolated cloud VMs for development to avoid accidentally installing malicious npm dependencies on your main computer. If you must install npm packages locally, I recommend using a VM, sandbox, or at least a containized docker environment.
+
+While I strongly recommend against local development, this repo provides hardened security defaults to reduce the risk if you do so:
 
 - [x] Uses pnpm with hardened defaults (see `.npmrc`), including disabling install scripts, requiring dependencies (and transitive dependencies) to be 3+ days old.
-- [ ] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
+- [x] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
 - [x] Pinned hashes enforced by GitHub (Security -> Actions -> General -> enable "Require full-length SHA")
 - [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo. See: [#84](https://github.com/richardm/2025-hello-typescript-node/issues/84)
 
