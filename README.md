@@ -22,7 +22,7 @@ This is an **opinionated** template using my current default tech stack: TypeScr
 - [x] Remove support for Node.js 18 and below due to End-of-Life (completed June 2025)
 - [x] Remove support for Node.js 23 due to End-of-Life (completed June 2025)
 - [x] Add support for Node.js 24 (Current) (completed June 2025)
-- [ ] Remove support for Node.js 20 due to end of maintenance phase. (in progress April 2026) (see: #83)
+- [ ] [Remove Node.js 20](https://github.com/richardm/2025-hello-typescript-node/issues/83) due to end of maintenance phase. (in progress April 2026)
 - [ ] Add support for Node.js 26 (coming soon)
 
 ## Supported Node.js versions
@@ -39,7 +39,7 @@ Since 2025, we have seen a surge in npm supply chain vulnerabilities, especially
 - [x] Uses pnpm with hardened defaults (see `.npmrc`), including disabling install scripts, requiring dependencies (and transitive dependencies) to be 3+ days old.
 - [ ] Uses [pinned hashes](https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions) for all GitHub Actions (see `.github/workflows`)
 - [x] Pinned hashes enforced by GitHub (Security -> Actions -> General -> enable "Require full-length SHA")
-- [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo. See: #84
+- [ ] Add [OSSF Scorecard action](https://github.com/marketplace/actions/ossf-scorecard-action) and configure GitHub repo. See: [#84](https://github.com/richardm/2025-hello-typescript-node/issues/84)
 
 ## Project Goals
 
