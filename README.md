@@ -65,3 +65,10 @@ I recommend using the latest LTS version of Node.js in production; however this 
 - The VS Code launch.json file is from https://github.com/withKonvSuu/learn-tsx
 - https://esbuild.github.io/content-types/#javascript-caveats
 - https://esbuild.github.io/content-types/#typescript-caveats
+
+## Notes on TypeScript 6 + ESM:
+
+> As of TypeScript 6, `moduleResolution: "node"` is deprecated. Unfortunately, ESM + node16 or nodenext requires importing from paths ending in a ".js" extension. I find this annoying and plan to add esbuild to address it.
+
+- https://www.totaltypescript.com/relative-import-paths-need-explicit-file-extensions-in-ecmascript-imports
+- https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
